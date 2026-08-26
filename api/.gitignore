@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+bin/
+tmp/
+dist/
+*.exe
+coverage.*
+*.test
+vendor/
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+postgres_data/

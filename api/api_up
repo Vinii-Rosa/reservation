@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
+
+if [[ ! -f .env ]]; then
+  cp .env.example .env
+  echo "Criado .env a partir de .env.example"
+fi
+
+docker compose up "$@"
